@@ -41,13 +41,19 @@ module.exports = {
         ],
       },
       {
-        test: /\.css$/i,
+        test: /\.s[ac]ss$/i,
         use: ['style-loader', 'css-loader', 'sass-loader'],
       },
+      //{
+      //  test: /\.(png|woff|woff2|eot|ttf|svg)$/,
+      //  loader: "url-loader",
+      //  options: {
+      //    limit: 8192,
+      //  },
+      //},
       {
-        test: /\.(png|woff|woff2|eot|ttf|svg)$/,
-        loader: "url-loader",
-        options: { limit: false },
+        test: /\.png/,
+        type: 'asset/resource',
       },
     ],
   },

@@ -1,0 +1,18 @@
+@import 'src/globals';
+
+.sidebar__submenu-item {
+  padding: .5rem;
+  padding-left: 0;
+  cursor: pointer;
+  margin-left: .5rem;
+
+  span {
+    margin-left: 2.5rem;
+  }
+}
+
+.selected {
+  background-color: $gray;
+  border-radius: 6px;
+  padding-right: 1rem;
+}

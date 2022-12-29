@@ -1,0 +1,23 @@
+@import 'src/globals';
+
+.separator {
+  width: 80px;
+  background-color: white;
+  border: none;
+  height: 1px;
+  margin: 25px auto;
+}
+
+.sidebar {
+  background-color: $primary;
+  padding-right: 2rem;
+}
+
+.logo-wrapper {
+  margin-left: 2rem;
+}
+
+.logo {
+  width: 150px;
+  cursor: pointer;
+}
