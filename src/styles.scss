@@ -1,9 +1,16 @@
 @use './reset';
 
+@use './ui/components/button';
+
 @use './pages/home';
 @use './pages/home/components/sidebar';
 @use './pages/home/components/main-content';
+@use './pages/home/components/main-menu';
+@use './pages/home/components/main-menu/main-menu-item';
 @use './pages/home/components/sidebar-menu';
 @use './pages/home/components/sidebar-menu/sidebar-menu-item';
 @use './pages/home/components/sidebar-submenu';
 @use './pages/home/components/sidebar-submenu/sidebar-submenu-item';
+@use './pages/home/components/options-menu';
+@use './pages/home/components/options-menu/options-menu-item';
+@use './pages/home/components/options-panel';

@@ -6,10 +6,14 @@ type Props = {
   onClick: () => void;
 }
 
-const SidebarSubmenuItem: FC<Props> = ({ title, selected, onClick }) => (
-  <li onClick={onClick} className={`sidebar__submenu-item ${selected && 'selected'}`}>
-    <span>{title}</span>
-  </li>
-);
+const SidebarSubmenuItem: FC<Props> = (props) => {
+  const { title, selected, onClick } = props;
+
+  return (
+    <li onClick={onClick} className={`sidebar__submenu-item ${selected && 'selected'}`}>
+      <span>{title}</span>
+    </li>
+  );
+};
 
 export default SidebarSubmenuItem;

@@ -7,7 +7,8 @@ type Props = {
   isExpanded?: boolean;
 }
 
-const HomeScreenSidebarSubMenu: FC<Props> = ({ submenu, isExpanded = false }) => {
+const HomeScreenSidebarSubMenu: FC<Props> = (props) => {
+  const { submenu, isExpanded = false } = props;
   const [selectedItemId, setSelectedItemId] = useState<number>(1);
 
   return (

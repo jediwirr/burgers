@@ -1,9 +1,7 @@
-.main-menu-first {
-  list-style: none;
-  display: flex;
-}
+@import 'src/globals';
 
-.main-menu-first-item {
-  margin-right: 2rem;
-  cursor: pointer;
+.content {
+  background-color: $secondary;
+  width: 100%;
+  padding: 10px 24px;
 }

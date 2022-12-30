@@ -7,7 +7,8 @@ type Props = {
   submenu?: MenuItem[];
 }
 
-const SidebarMenuItem: FC<Props> = ({ title, submenu }) => {
+const SidebarMenuItem: FC<Props> = (props) => {
+  const { title, submenu } = props;
   const [isExpanded, setIsExpanded] = useState<boolean>(false);
 
   const onSelectItem = () => {

@@ -1,0 +1,23 @@
+.options-menu-item {
+  color: white;
+  margin-right: 2rem;
+  cursor: pointer;
+  position: relative;
+  height: 36px;
+  display: flex;
+  align-items: center;
+}
+
+.options-menu-item_active {
+  &:after {
+    content: "";
+    background: white;
+    background-size: 1px 2px;
+    height: 4px;
+    width: 100%;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    border-radius: 4px 4px 0px 0px;
+  }
+}
