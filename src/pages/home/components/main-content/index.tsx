@@ -8,7 +8,7 @@ const HomeScreenMainContent = () => {
     <div className="content">
       <HomeScreenMainMenu />
 
-      <p>Классический</p>
+      <h1 className="content__title">Классический</h1>
       <HomeScreenOptionsMenu />
       <HomeScreenOptionsPanel />
     </div>

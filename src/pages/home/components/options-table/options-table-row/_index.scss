@@ -1,0 +1,31 @@
+@import 'src/globals';
+
+.options-panel__table-row {
+  display: flex;
+  padding: 8px 26px;
+
+  &--head {
+    @extend .options-panel__table-row;
+    background-color: $primary;
+  }
+}
+
+.table-item {
+  flex: 1;
+
+  &:nth-of-type(2) {
+    flex: 8;
+  }
+
+  &:nth-of-type(5) {
+    flex: 8;
+  }
+
+  &--head {
+    @extend .table-item;
+    color: $gray-dark;
+  }
+}
+
+.table-item__checkbox {
+}

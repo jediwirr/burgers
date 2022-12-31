@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1,
+    "title": "Соус",
+    "weight": "12",
+    "value": "130",
+    "note": "",
+    "choices": [
+      {
+        "id": 1,
+        "title": "Кетчуп",
+        "weight": "12",
+        "value": "130",
+        "note": "Uncle Benz, Махеев или аналоги..."
+      },
+      {
+        "id": 2,
+        "title": "Майонез",
+        "weight": "12",
+        "value": "130",
+        "note": "calve"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Салатный лист",
+    "weight": "12",
+    "value": "130",
+    "note": "айсберг",
+    "choices": []
+  },
+  {
+    "id": 3,
+    "title": "Помидор",
+    "weight": "12",
+    "value": "130",
+    "note": "",
+    "choices": []
+  },
+  {
+    "id": 4,
+    "title": "Котлета",
+    "weight": "12",
+    "value": "130",
+    "note": "текст",
+    "choices": [
+      {
+        "id": 1,
+        "title": "Фарш говяжий",
+        "weight": "12",
+        "value": "130",
+        "note": "разморож."
+      }
+    ]
+  }
+]
