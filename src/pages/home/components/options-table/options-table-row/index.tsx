@@ -5,11 +5,12 @@ import HomeScreenOptionsTableItem from "../options-table-item";
 type Props = {
   isHeaderRow?: boolean;
   option: Option;
+  hasChoices?: boolean;
   isChoiceItem?: boolean;
 }
 
 const HomeScreenOptionsTableRow: FC<Props> = (props) => {
-  const { isHeaderRow = false, isChoiceItem = false, option } = props;
+  const { isHeaderRow = false, isChoiceItem = false, hasChoices = false, option } = props;
 
   const resolveClassName = useCallback((name: string) => {
     if (isHeaderRow) {
@@ -38,7 +39,9 @@ const HomeScreenOptionsTableRow: FC<Props> = (props) => {
           key={key}
           resolvedClassName={resolveClassName('table-item')} 
           title={option[key]} 
+          isHeaderRow={isHeaderRow}
           isChoiceItem={isChoiceItem}
+          hasChoices={hasChoices}
           isItemName={i === 0}
         />
       ))}

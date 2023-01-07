@@ -1,5 +1,23 @@
 .table-item__item-title {
+  border: none;
+  background: none;
+  width: 80%;
+  font-size: 14px;
+
+  &:focus {
+    outline: none;
+    padding: 5px;
+    border: 1px solid #779DFF;
+    border-radius: 4px;
+  }
+
+  &_bold {
+    @extend .table-item__item-title;
+    font-weight: 600;
+  }
+
   &--choice {
+    @extend .table-item__item-title;
     margin-left: 20px;
   }
 }

@@ -21,7 +21,10 @@ const HomeScreenOptionsTable: FC<Props> = (props) => {
   return (
     <div className="options-panel__table">
       <div className="table__head">
-        <h3 className="table__title">{title}</h3>
+        <div className="table__title-wrapper">
+          <h3 className="table__title">{title}</h3>
+          <img className="close-button" src={require('/assets/images/close/close.png')} alt="close" />
+        </div>
         <div className="table__actions">
           <Button title="Ингредиент" onClick={() => console.log('click')} />
           <Button title="Группа" onClick={() => console.log('click')} />
@@ -37,6 +40,7 @@ const HomeScreenOptionsTable: FC<Props> = (props) => {
           <HomeScreenOptionsTableRow
             key={item.id}
             option={item}
+            hasChoices={item.choices.length > 0}
           />
           {item.choices && item.choices.map(choice => (
             <HomeScreenOptionsTableRow
