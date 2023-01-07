@@ -1,14 +1,15 @@
-import React from "react";
+import React, { FC } from "react";
 import Button from "../../../../ui/components/button";
 import HomeScreenOptionsTable from "../options-table";
 
-import options from '../../data/options.json';
+import filling from '../../data/filling.json';
+import basis from '../../data/basis.json';
 
-const HomeScreenOptionsPanel = () => {
+const HomeScreenOptionsPanel: FC = () => {
   return (
     <div className="options-panel">
-      <HomeScreenOptionsTable title="Начинка" options={options} />
-      <HomeScreenOptionsTable title="Основа" />
+      <HomeScreenOptionsTable title="Начинка" options={filling} />
+      <HomeScreenOptionsTable title="Основа" options={basis} />
 
       {/*<div className="options-panel__head">
         <h3 className="options-panel__title">Основа</h3>
@@ -21,7 +22,7 @@ const HomeScreenOptionsPanel = () => {
         </div>
       </div>*/}
 
-      {/*<Button title="Новый блок" onClick={() => console.log('click')} outline={false} />*/}
+      <Button title="Новый блок" onClick={() => console.log('click')} outline={false} />
     </div>
   );
 };

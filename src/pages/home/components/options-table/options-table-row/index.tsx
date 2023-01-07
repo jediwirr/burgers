@@ -22,7 +22,9 @@ const HomeScreenOptionsTableRow: FC<Props> = (props) => {
   const optionKeys = Object.keys(option).filter(key => key !== 'id' && key !== 'choices');
 
   return (
-    <div className={resolveClassName('options-panel__table-row')}>
+    <div 
+      className={resolveClassName('options-panel__table-row')}
+      draggable={!isHeaderRow}>
       <div className="table-item">
         <input 
           className="table-item__checkbox"

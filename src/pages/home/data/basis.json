@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "title": "Булочка белая",
+    "weight": "90",
+    "value": "345",
+    "note": "",
+    "choices": []
+  },
+  {
+    "id": 2,
+    "title": "Кунжут",
+    "weight": "8",
+    "value": "45",
+    "note": "",
+    "choices": []
+  }
+]
