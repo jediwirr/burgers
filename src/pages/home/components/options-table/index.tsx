@@ -1,9 +1,15 @@
-import React from "react";
+import React, { FC } from "react";
 import HomeScreenOptionsTableRow from "./options-table-row";
+import Button from "../../../../ui/components/button";
 
-import options from '../../data/options.json';
+type Props = {
+  title: string;
+  options?: any[];
+}
 
-const HomeScreenOptionsTable = () => {
+const HomeScreenOptionsTable: FC<Props> = (props) => {
+  const { title, options } = props;
+
   const optionHeadings = {
     id: 0,
     title: 'Название',
@@ -13,13 +19,20 @@ const HomeScreenOptionsTable = () => {
   };
 
   return (
-    <>
+    <div className="options-panel__table">
+      <div className="table__head">
+        <h3 className="table__title">{title}</h3>
+        <div className="table__actions">
+          <Button title="Ингредиент" onClick={() => console.log('click')} />
+          <Button title="Группа" onClick={() => console.log('click')} />
+        </div>
+      </div>
       <HomeScreenOptionsTableRow
         key={optionHeadings.id}
         isHeaderRow 
         option={optionHeadings}
       />
-      {options.map(item => (
+      {options?.map(item => (
         <>
           <HomeScreenOptionsTableRow
             key={item.id}
@@ -34,7 +47,7 @@ const HomeScreenOptionsTable = () => {
           ))}
         </>
       ))}
-    </>
+    </div>
   );
 };
 
